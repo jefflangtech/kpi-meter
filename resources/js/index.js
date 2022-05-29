@@ -60,6 +60,10 @@ const drawChart = function(rotation) {
     const ctx = canvas.getContext('2d')
     ctx.clearRect(0, 0, width, height)
 
+    // Draw a white background
+    ctx.fillStyle = 'white'
+    ctx.fillRect(0, 0, width, height)
+
     // Draw the grey arc
     ctx.save()
     ctx.beginPath()
